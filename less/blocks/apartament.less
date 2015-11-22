@@ -1,0 +1,51 @@
+.apartament{
+	display: flex;
+	text-align: center;
+  background-color: @gray-lighter;
+  margin-bottom: 40px;
+  @media (max-width: 1200px){
+    padding-top: 30px;
+  }
+	
+	@media (max-width: 1200px){
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+
+  &__text-info{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__description{
+    margin: 30px 0px;
+    text-align: left;
+  }
+  &__read-more{
+    margin-left: 50px;
+    color: @gray-dark;
+    text-decoration-style:dashed;
+    border-bottom: 1px dotted #000;
+    @media (max-width: 768px){
+    margin-left: 0;
+  }
+
+  }
+  &__buttons-item{
+    margin-bottom: 30px;
+    display: inline-block;
+    @media (max-width: 768px){
+    display:block;
+  }
+  }
+  &__img{
+    height: 300px;
+     @media (max-width: 1200px){
+      margin-top: 30px;
+    }
+     @media (max-width: 768px){
+      height: 220px;
+     }
+  }
+}

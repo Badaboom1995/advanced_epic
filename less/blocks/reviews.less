@@ -1,0 +1,68 @@
+.reviews{
+	background: @green;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	position: relative;
+	margin-bottom: 50px;
+	&__title{
+		font-size:@common-title;
+		color: @gray-lighter;
+		margin-bottom: 50px;
+	}
+	&__item{
+		width: 480px;
+		display: inline-block;
+		position: relative;
+		background-color: @gray-lighter;
+		padding-top: 120px;
+		padding-bottom: 30px;
+		margin: 0 10px;
+		@media(max-width:768px){
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		@media(max-width:1200px){
+			margin-bottom: 50px;
+		}
+	}
+	&__img-wrapper{
+		width: 65px;
+		height: 70px;
+	}
+	&__footer{
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		transform:translateX(-50%);
+		&:before{
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			background-image: url(http://placehold.it/30x30);
+			bottom: -35px;
+			left:20px;
+
+		}
+	}
+	&__btn{
+		display: block;
+		width: 140px;
+		height: 40px;
+		margin: 20px auto;
+		background-color: transparent;
+		border: 2px solid @gray-lighter;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		cursor: pointer;
+
+		&:hover{
+			background-color: @gray-lighter;
+			text-decoration: none;
+			color: @green;
+		}
+	}
+}

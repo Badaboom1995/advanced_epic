@@ -1,0 +1,46 @@
+.apart-input{
+  background-color: @gray-lighter; 
+  text-align: center;
+  font-size: 0;
+  padding: 50px 0px;
+  &__wrapper{
+    width: 380px;
+    margin: 0 auto;
+    @media(max-width:768px){
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__title{
+    font-size: @common-title;
+    margin-bottom: 30px;
+  }
+
+    label{
+      cursor: pointer;
+      width: 190px;
+      height: 108px;
+      display: inline-block;
+      padding: 10px;
+      font-size: 14px;
+      transition:0.5s ease all;
+       @media(max-width:768px){
+      width: 130px;
+    }
+   
+    }
+    label[for=apart-cottage]{
+      background-color: @gray;
+    }
+    input#apart-hotel:checked+label, 
+    input#apart-cottage:checked+label {
+      background-color: @green;
+    }
+    label[for=apart-hotel]{
+      background-color: @gray;
+    }
+    input[type=radio] {
+      display: none;
+      
+    }
+}
