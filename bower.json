@@ -1,0 +1,21 @@
+{
+  "name": "advanced",
+  "description": "my site",
+  "main": "index.html",
+  "authors": [
+    "Alex"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "key"
+  ],
+  "homepage": "https://github.com/Badaboom1995/advanced_epic",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

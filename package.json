@@ -1,0 +1,28 @@
+{
+  "name": "advanced",
+  "version": "1.0.0",
+  "description": "my site",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Badaboom1995/advanced_epic.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Badaboom1995/advanced_epic/issues"
+  },
+  "homepage": "https://github.com/Badaboom1995/advanced_epic#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "gulp-less": "^3.0.5"
+  }
+}
