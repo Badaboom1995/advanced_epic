@@ -4,5 +4,33 @@
 	background-color: @orange;
 	border-radius: 70px;
 	color: @gray-lighter;
+	position: relative;
+	
+	&:hover{
+		background-color: darken(@orange, 20%);
+		text-decoration: none;
+		color: @gray-lighter;
+	}
+	
+	&--green{
+		background-color: @green;
+		border-radius: 0;
+		border: none;
+	}
+	&--green:hover{
+		background-color: darken(@green, 20%);
+	}
+	&--calendar:before{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 15px;
+    	height: 16px;
+		left: 15px;
+		background-image: url(../img/sprite.png);
+    	background-repeat: no-repeat;
+    	background-position: -132px -5px;
+		top: 10px;
+	}
 	
 }

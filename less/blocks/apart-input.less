@@ -21,23 +21,26 @@
       width: 190px;
       height: 108px;
       display: inline-block;
-      padding: 10px;
       font-size: 14px;
       transition:0.5s ease all;
+       background-position: 55px 40px;
        @media(max-width:768px){
       width: 130px;
+      background-position: 25px 40px;
     }
    
     }
     label[for=apart-cottage]{
-      background-color: @gray;
+      background-image: url(../img/icons/cottage.png);
+      background-repeat: no-repeat;
     }
     input#apart-hotel:checked+label, 
     input#apart-cottage:checked+label {
-      background-color: @green;
+      opacity: 0.5;
     }
     label[for=apart-hotel]{
-      background-color: @gray;
+      background-image: url(../img/icons/hotel.png);
+      background-repeat: no-repeat;
     }
     input[type=radio] {
       display: none;

@@ -5,6 +5,13 @@
 	&__title{
 		.small-title();
 	}
+	&__dates{
+		@media(min-width:768px){
+			display: flex;
+			justify-content: center;
+		}
+
+	}
 	&__group-title{
 		font-size: 14px;
 		color: @gray-dark;
@@ -18,6 +25,15 @@
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 10px;
+		@media(min-width:768px){
+			margin: 0 10px;
+		}
+		@media(min-width:1200px){
+			margin: 0;
+			padding: 20px;
+			width: 220px;
+			background-color: @gray-lighter;
+		}
 
 	}
 	input{
@@ -43,8 +59,18 @@
 		}
 	}
 	&__arrive{
+		position: relative;
 		input{
 			color: @gray;
+		}
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 1px;
+			height: 90px;
+			background-color: @gray-light;
+			position: absolute;
+			left: 0;
 		}
 	}
 }

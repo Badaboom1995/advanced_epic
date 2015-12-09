@@ -1,3 +1,14 @@
+#reviews{
+	margin: 0 auto;
+	overflow: visible;
+	position: relative;
+	@media(min-width:1200px){
+		width: 1000px;
+
+	}
+
+}
+
 .reviews{
 	background: @green;
 	text-align: center;
@@ -5,6 +16,12 @@
 	padding-bottom: 50px;
 	position: relative;
 	margin-bottom: 50px;
+
+	cite{
+		color:@gray;
+		display: block;
+		text-align: center;
+	}
 	&__title{
 		font-size:@common-title;
 		color: @gray-lighter;
@@ -14,10 +31,11 @@
 		width: 480px;
 		display: inline-block;
 		position: relative;
+		overflow: visible;
 		background-color: @gray-lighter;
 		padding-top: 120px;
 		padding-bottom: 30px;
-		margin: 0 10px;
+		margin: 20px 10px;
 		@media(max-width:768px){
 			width: 100%;
 			margin-left: 0px;
@@ -30,23 +48,34 @@
 	&__img-wrapper{
 		width: 65px;
 		height: 70px;
+		display: inline-block;
 	}
 	&__footer{
 		position: absolute;
 		top: -15px;
 		left: 50%;
 		transform:translateX(-50%);
+		text-align: center;
 		&:before{
 			content: "";
 			position: absolute;
-			width: 30px;
-			height: 30px;
 			display: inline-block;
-			background-image: url(http://placehold.it/30x30);
-			bottom: -35px;
-			left:20px;
+			background-image: url(../img/sprite.png);
+			bottom: -23px;
+			left:50%;
+			transform:translateX(-50%);
 
 		}
+	}
+	&__vk:before{
+		width: 22px;
+    	height: 13px;
+   		background-position: -155px -113px;
+	}
+	&__fb:before{
+		width: 17px;
+    	height: 17px;
+    	background-position: -157px -5px;
 	}
 	&__btn{
 		display: block;

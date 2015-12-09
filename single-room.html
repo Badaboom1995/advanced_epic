@@ -6,14 +6,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-		<header class="page-header">
+    <header class="page-header">
             <div class="row">
             <div class="page-header__inner container">
                 <div class="col-xs-11 col-xs-offset-1 col-lg-offset-0 col-lg-2 text-center ">
                     <a href="" class="main-logo">
-                        <span class="main-logo__logo-text">Green </span>
-                        
-                        <span class="main-logo__logo-text">Valley</span>
+                       <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-5 visible-lg-block">
@@ -34,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 visible-lg-block">
-                    <a href="" class="btn">Забронировать</a>
+                    <a href="" class="btn btn--calendar">Забронировать</a>
                 </div>
                 <div class="burger col-sm-1 hidden-lg">
                     <span class="burger__line"></span>
@@ -77,19 +75,29 @@
 					</ul>
 				</section>
 	</div>
-	<div class="single-room__slider">
-		<img src="http://placehold.it/300x220" alt="">
-	</div>
+	<div class="single-room__slider owl-carousel" id="single-room__slider">
+            <img src="img/slide-1.jpg" alt="">
+            <img src="img/apart-1.jpg" alt="">
+            <img src="img/apart-2.jpg" alt="">
+            <img src="img/apart-3.jpg" alt="">
+            <img src="img/apart-4.jpg" alt="">
+            <img src="img/apart-3.jpg" alt="">
+            <img src="img/apart-1.jpg" alt="">
+            <img src="img/apart-2.jpg" alt="">
+            <img src="img/apart-3.jpg" alt="">
+            <img src="img/apart-4.jpg" alt="">
+        </div>
 </section>
 <div class="price">
 		<a href="" class="single-room__btn">Заказать</a>
 		<span class="price__value">От<b> 3400 </b>рублей/сутки</span>
 	</div>
-<section class="apartament-types apartament-types--single-room-page container">
+<div class="container">
+<section class="apartament-types apartament-types--single-room-page owl-carousel" id="single-room__bottom-slider">
  
           <div class="apartament-types__item">
               <div class="apartament-types__img-wrapper">
-                  <img src="http://placehold.it/200x200" alt="">
+                  <img src="img/apart-1.jpg" alt="">
               </div>
               <div class="price">
                   <h2 class="price__title">В отеле</h2>
@@ -98,7 +106,7 @@
           </div>
            <div class="apartament-types__item">
               <div class="apartament-types__img-wrapper">
-                  <img src="http://placehold.it/200x200" alt="">
+                  <img src="img/apart-2.jpg" alt="">
               </div>
               <div class="price">
                   <h2 class="price__title">В отеле</h2>
@@ -107,7 +115,7 @@
           </div>
           <div class="apartament-types__item">
               <div class="apartament-types__img-wrapper">
-                  <img src="http://placehold.it/200x200" alt="">
+                  <img src="img/apart-3.jpg" alt="">
               </div>
               <div class="price">
                   <h2 class="price__title">В отеле</h2>
@@ -116,18 +124,19 @@
           </div>
 
 </section>
- <footer class="page-footer container">
+</div>
+  <footer class="page-footer container">
       <div class="row">
         <div class="col-sm-4 hidden-xs">
           <div class="page-footer__adress">г.Санкт-Петербург Приморское ш. 600</div>
         </div>
         <div class="col-sm-4 col-xs-12 text-center">
           <div class="social">
-            Green
               <div class="page-footer__logo-img">
-                <img src="http://placehold.it/30x20" alt="">
+                <a href="" class="main-logo">
+                    <img src="img/logo.png" alt="">
+                </a>
               </div>
-            Valley
           </div> 
         </div>
         <div class="col-sm-4 hidden-xs">
@@ -135,5 +144,8 @@
         </div>
       </div>
     </footer>
+    <script src='js/jquery-2.1.4.min.js'></script>
+    <script src='js/owl.carousel.js'></script>
+    <script src='js/script.js'></script>
     </body>
     </html>

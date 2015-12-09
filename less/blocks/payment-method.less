@@ -1,0 +1,136 @@
+.step{
+	text-align: center;
+	width: 100%;
+}
+
+
+.payment-wrapper{
+	background-color: @gray-light;
+}
+.payment-method{
+	@media(min-width:768px){
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@media(min-width:1200px){
+		width: 780px;
+		margin: 0 auto;
+	}
+
+	display: flex;
+	flex-direction: column;
+	
+	padding-bottom: 80px;
+	padding-top: 50px;
+	&__alert-block{
+		@media(min-width:768px){
+			order: 0;
+			margin-bottom: 0px;
+			margin-right: 2%;
+			width: 30%;
+			padding: 20px;
+
+		}
+		order: 1;
+		background-color: #fff;
+		margin-bottom: 80px;
+		padding: 20px 40px;
+
+	}
+	&__wrapper{}
+	&__alert{
+		display: inline-block;
+	}
+	&__field-name{
+		display: block;
+		text-align: center;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+	}
+	&__title{
+		.common-title();
+		text-align: center;
+		width: 100%;
+	}
+	&__options{
+		@media(min-width:768px){
+			width: 67%;
+		}
+	}
+	&__option{
+		background-color: #fff;
+		padding: 25px 0px;
+		padding-left: 70px;
+		margin-bottom: 20px;
+		@media(min-width:768px){
+			&:last-child{
+			margin-bottom: 0;
+			}
+		}
+		@media(min-width:1200px){
+			padding-left: 20px;
+		}
+	}
+	&__option-desc{
+		display: inline-block;
+		width: 250px;
+		margin-bottom: 25px;
+	}
+	label{
+		text-align: left;
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	label[for="now"]{
+		
+		display: inline-block;
+	}
+	label[for="before"]{
+		margin-bottom: 0px;
+		display: inline-block;
+	}
+	input[type="submit"] {
+		order: 2;
+		width: 280px;
+		width: 100%;
+		margin: 0 auto;
+		@media(min-width:768px){
+			margin-top: 50px;
+		}
+	}
+	input[type="radio"] {
+		display: none;
+	}
+	input[type="radio"]+label{
+		padding-left: 35px;
+		box-sizing: border-box;
+		width: 140px;
+		margin-right: 20px;
+		vertical-align: top;
+	}
+	input[type="text"]{
+		margin-bottom: 10px;
+	}
+	&__input-item:nth-child(4){
+		
+	}
+	&__input-item:nth-child(5){
+		
+	}
+	&__input-item:nth-child(6){
+		
+	}
+	&__input-item:nth-child(7){
+		
+	}
+	&__input-item{
+		font-size: 14px;
+		@media(min-width:768px){
+			width: 45%;
+			margin: 0 2%;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+	}
+}

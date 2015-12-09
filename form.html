@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -19,9 +11,7 @@
             <div class="page-header__inner container">
                 <div class="col-xs-11 col-xs-offset-1 col-lg-offset-0 col-lg-2 text-center ">
                     <a href="" class="main-logo">
-                        <span class="main-logo__logo-text">Green </span>
-                        
-                        <span class="main-logo__logo-text">Valley</span>
+                       <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-5 visible-lg-block">
@@ -42,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 visible-lg-block">
-                    <a href="" class="btn">Забронировать</a>
+                    <a href="" class="btn btn--calendar">Забронировать</a>
                 </div>
                 <div class="burger col-sm-1 hidden-lg">
                     <span class="burger__line"></span>
@@ -54,7 +44,6 @@
     </header>
 <section class="booking-promo">
 	<h1 class="booking-promo__title">Бронирование</h1>
-  i
 	<p class="booking-promo__text">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните
 по телефону:<b> +7 812 777-55-88</b></p>
 </section>
@@ -112,62 +101,83 @@
 			</div>
 			<div class="location-type__location-info">
 				<ul class="location-type__info-list">
-					<li class="location-type__info-item">Площадь 100м</li>
-					<li class="location-type__info-item">3 комнаты</li>
-					<li class="location-type__info-item">5 спальных мест</li>
-					<li class="location-type__info-item">Раздельный санузел</li>
-					<li class="location-type__info-item">Wi-Fi</li>
+					<li class="location-type__info-item triangle">Площадь 100м</li>
+					<li class="location-type__info-item door">3 комнаты</li>
+					<li class="location-type__info-item bed">5 спальных мест</li>
+					<li class="location-type__info-item bath">Раздельный санузел</li>
+					<li class="location-type__info-item wi-fi">Wi-Fi</li>
 				</ul>
 			</div>
 		</section>
 		
 		<section class="personal-info">
     <div class="row">
-    <div class="col-xs-12 text-center">
+    <div class="col-xs-12">
         <span class="step">Шаг 4</span>
         <h1 class="personal-info__section-title">Персональная информация</h1>
-    			<div class="row">
-    				<div class="col-xs-12 col-sm-6"><input type="text" width="100%"></div>
-    				<div class="col-xs-12 col-sm-6"><input type="text"></div>
-            <div class="col-xs-12 col-sm-6"><p>Мы свяжемся с вам в случае необходимости</p><input type="text"></div>
-    			</div>
-    			<div class="row">
-    				<div class="col-xs-12 col-sm-6"><input type="text"></div>
-    				<div class="col-xs-12 col-sm-6"><p>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p><input type="text"></div>
-    			</div>
+          <div class="row">
+      				<div class="col-xs-12 col-sm-6"><input type="text" width="100%" placeholder = "Имя"></div>
+      				<div class="col-xs-12 col-sm-6"><input type="text" placeholder = "Фамилия"></div>
+      				<div class="col-xs-12 col-sm-6">
+                <input type="text" placeholder = "Номер телефона">
+                <p>Мы свяжемся с вам в случае необходимости</p>
+              </div>
+      				<div class="col-xs-12 col-sm-6">
+                <input type="text" placeholder = "E-Mail">
+                <p>На этот адрес мы вышлем вам подтверждение о забронированном номере.</p>
+              </div>
+          </div>
         </div>
       </div>
 		</section>
-	<div class="outer-wrapper">
-		<span class="step"></span>
-		<h1 class="booking-form__section-title"></h1>
-		<section class="booking-form__payment">
-			<div class="left-section">
-				<span class="field-name"></span>
-				<p class="alert"></p>
+		<div class="payment-wrapper">
+		<section class="payment-method">
+      <span class="step">Шаг 5</span>
+      <h1 class="payment-method__title">Способ оплаты</h1>
+			<div class="payment-method__alert-block">
+				<span class="payment-method__field-name">К оплате</span>
+				<p class="payment-method__alert">Пожалуйста, выберите дату въезда и выезда, чтобы увидеть сумму к оплате</p>
 			</div>
-			<div class="right-section">
-				<div class="top-section">
-					<input type="radio">
-					<p class="alert"></p>
+			<div class="payment-method__options">
+				<div class="payment-method__option">
+					<input type="radio" id="before" name="payment-type"><label for="before">По приезду</label>
+					<p class="payment-method__option-desc hidden-xs">Вы можете произвести оплату по факту заселения.</p>
 				</div>
-				<div class="top-section">
-					<input type="radio">
-					<p class="alert"></p>
-					<label for=""></label><input type="text">
-					<label for=""></label><input type="text">
-					<label for=""></label><input type="text">
-					<label for=""></label><input type="text">
+				<div class="payment-method__option">
+					<input type="radio" id="now" name="payment-type"><label for="now">Сейчас</label>
+          <p class="payment-method__option-desc hidden-xs">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+					<div class="payment-method__input-item"><label for="">Номер карты</label><input type="text"></div>
+					<div class="payment-method__input-item"><label for="">Фамилия владельца карты</label><input type="text"></div>
+					<div class="payment-method__input-item"><label for="">Код CVV</label><input type="text"></div>
+					<div class="payment-method__input-item"><label for="">Действует до</label><input type="text"></div>
 				</div>
 			</div>
-			<input type="submit">
+			<input type="submit" class='btn btn--green'>
 		</section>
-	</div>
+    </div>
 </form>
-<footer class="page-footer">
-	<div class="page-footer__adress"></div>
-	<div class="social"></div>
-	<div class="page-footer__contacts"></div>
-</footer>
-</body>
-</html>
+<footer class="page-footer container">
+      <div class="row">
+        <div class="col-sm-4 hidden-xs">
+          <div class="page-footer__adress">г.Санкт-Петербург Приморское ш. 600</div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+          <div class="social">
+              <div class="page-footer__logo-img">
+                <a href="" class="main-logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+              </div>
+          </div> 
+        </div>
+        <div class="col-sm-4 hidden-xs">
+          <div class="page-footer__contacts">8-8000-555-35-35 info@greenvalley.ru</div>
+        </div>
+      </div>
+    </footer>
+    <script src='js/jquery-2.1.4.min.js'></script>
+    <script src='js/owl.carousel.js'></script>
+    <script src='js/script.js'></script>
+
+    </body>
+    </html>

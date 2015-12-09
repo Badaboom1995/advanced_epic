@@ -77,14 +77,31 @@
 	}
 	&__info-item{
 		width: 20%;
-	}
-	&__info-item:before{
-		content: "";
-		display: block;
-		margin: 0 auto;
-		width: 50px;
-		height: 50px;
-		background-image: url(http://placehold.it/80x80);
+		&:before{
+			content: "";
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			width: 60px;
+			height: 50px;
+			background-repeat: no-repeat;
+		}
+		&.triangle:before{
+			background-image: url(../img/icons/triangle.png);
+		}
+		&.door:before{
+			background-image: url(../img/icons/door.png);
+			width: 30px;
+		}
+		&.bed:before{
+			background-image: url(../img/icons/bed.png);
+		}
+		&.bath:before{
+			background-image: url(../img/icons/bath.png);
+		}
+		&.wi-fi:before{
+			background-image: url(../img/icons/wi-fi.png);
+		}
 	}
 
 }
