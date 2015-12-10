@@ -3,7 +3,13 @@
 	width: 100%;
 }
 
-
+.flex-wrap{
+	@media(min-width:768px){
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+}
 .payment-wrapper{
 	background-color: @gray-light;
 }
@@ -112,18 +118,15 @@
 	input[type="text"]{
 		margin-bottom: 10px;
 	}
-	&__input-item:nth-child(4){
-		
+	@media(min-width:768px){
+		&__input-item:nth-child(2){
+		order: 1;
+		}
+		&__input-item:nth-child(4){
+			order: 2;
+		}
 	}
-	&__input-item:nth-child(5){
-		
-	}
-	&__input-item:nth-child(6){
-		
-	}
-	&__input-item:nth-child(7){
-		
-	}
+	
 	&__input-item{
 		font-size: 14px;
 		@media(min-width:768px){
