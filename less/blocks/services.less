@@ -28,8 +28,7 @@ background-size: 100% 100%;
 		top:110%;
 	}
 	&__title{
-		font-size: @common-title;
-		margin-bottom: 30px;
+		.common-title();
 	}
 	&__paragraph{
 		font-size: @common-text;
@@ -44,10 +43,13 @@ background-size: 100% 100%;
 	}
 	&__list-item{
 		position: relative;
-		margin: 0px 20px;
-		width: 85px;
-		height: 85px;
+		margin-right: 60px;
+		width: 80px;
+		height: 80px;
 		box-sizing: border-box;
+		&:last-child{
+			margin-right: 0;
+		}
 		
 		@media(max-width:1200px){
 			margin:25px 1%;

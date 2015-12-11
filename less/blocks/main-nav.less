@@ -1,4 +1,14 @@
 .main-nav{
+	@media(max-width:1200px){
+		position: absolute;
+		overflow: hidden;
+		width: 0px;
+		top:0px;
+		right: -25px;
+		height: 0;
+		background-color: @green;
+		transition: 1s ease all;
+	}
 	&__item{
 		display: inline-block;
 
@@ -17,5 +27,16 @@
 	}
 	&__list{
 		margin: 0;
+	}
+}
+.main-nav.active{
+	@media(max-width:1200px){
+		height: 160px;
+		width: 100px;
+		right: -80px;
+		top: 20px;
+		padding: 10px;
+		z-index: 9;
+		border-radius: 5px;
 	}
 }

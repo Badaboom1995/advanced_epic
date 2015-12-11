@@ -14,14 +14,14 @@
                        <img src="img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-5 visible-lg-block">
+                <div class="col-lg-5">
                     <nav class="main-nav">
                         <ul class="main-nav__list">
-                            <li class="main-nav__item"><a href="" class="link">Номера</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Коттедж</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Ресторан</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Отдых</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Контакты</a></li>
+                            <li class="main-nav__item"><a href="room_list.html" class="link">Номера</a></li>
+                            <li class="main-nav__item"><a href="single-room.html" class="link">Коттедж</a></li>
+                            <li class="main-nav__item"><a href="#" class="link">Ресторан</a></li>
+                            <li class="main-nav__item"><a href="#" class="link">Отдых</a></li>
+                            <li class="main-nav__item"><a href="form.html" class="link">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 visible-lg-block">
-                    <a href="" class="btn btn--calendar">Забронировать</a>
+                    <a href="form.html" class="btn btn--calendar">Забронировать</a>
                 </div>
                 <div class="burger col-sm-1 hidden-lg">
                     <span class="burger__line"></span>
@@ -234,11 +234,29 @@
         </div>
       </div>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-fq6rO_DPNWTiBejYRhXiPcV_mDazlpM&callback=initMap"
+        async defer></script>
     <script src='js/jquery-2.1.4.min.js'></script>
     <script src='js/owl.carousel.js'></script>
-    <script src='js/script.js'></script>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-fq6rO_DPNWTiBejYRhXiPcV_mDazlpM&callback=initMap"
-        async defer></script>
+     <script>var map;
+        function initMap() {
 
+        var myLatLng = {lat:60.167701, lng: 29.8209213};
+
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 17,
+              zoomControl: false,
+              scaleControl: false,
+              scrollwheel: false,
+          });
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+          });
+    }
+    </script>
+    <script src='js/script.js'></script>
     </body>
     </html>

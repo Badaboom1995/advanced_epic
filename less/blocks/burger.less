@@ -3,6 +3,7 @@
 	flex-direction: column;
 	padding: 15px;
 	cursor: pointer;
+	
 	&__line{
 		display: inline-block;
 		width: 30px;
@@ -10,6 +11,22 @@
 		border-radius: 2px;
 		margin-bottom: 3px;
 		background-color: @orange;
-		
+		transition: 0.5s ease all;
 	}
+
+}
+.burger.active{
+	.burger__line:nth-child(3){
+		position: absolute;
+		transform:rotate(-135deg);
+	}
+	.burger__line:nth-child(2){
+		position: absolute;
+		transform:rotate(-45deg);
+	}
+	.burger__line:nth-child(1){
+		position: absolute;
+		transform:rotate(45deg);
+	}
+
 }
