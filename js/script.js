@@ -77,7 +77,8 @@
   });
      $("#single-room__slider").owlCarousel({
     items : 1,
-    navigation : false,
+    navigation : true,
+    navigationText : ["",""],
     pagination : false,
     slideSpeed : 400,
     itemsDesktop : [1199,1],

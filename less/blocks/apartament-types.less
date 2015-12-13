@@ -1,3 +1,8 @@
+.apartament-types__outer-wrapper{
+	background-color: @gray-lighter;
+	width: 100%;
+	margin-top: 50px;
+}
 .apartament-types{
 	background-color: @green;
 	padding: 50px 0px;
@@ -40,14 +45,15 @@
 		margin-bottom: 40px;
 	}
 	&--single-room-page{
-		background-color: @gray-lighter;
 		display: flex;
 		text-align: center;
+		background-color: transparent;
 		@media(max-width:768px){
 			flex-direction: column;
 			align-items: center;
 		}
 		.apartament-types__item{
+			background-color: #fff;
 			@media(max-width:1200px){
 				width: 340px;
 			}
