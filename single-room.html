@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -14,14 +15,14 @@
                        <img src="img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-5 visible-lg-block">
+                <div class="col-lg-5">
                     <nav class="main-nav">
                         <ul class="main-nav__list">
-                            <li class="main-nav__item"><a href="" class="link">Номера</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Коттедж</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Ресторан</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Отдых</a></li>
-                            <li class="main-nav__item"><a href="" class="link">Контакты</a></li>
+                            <li class="main-nav__item"><a href="room_list.html" class="link">Номера</a></li>
+                            <li class="main-nav__item"><a href="single-room.html" class="link">Коттедж</a></li>
+                            <li class="main-nav__item"><a href="#" class="link">Ресторан</a></li>
+                            <li class="main-nav__item"><a href="#" class="link">Отдых</a></li>
+                            <li class="main-nav__item"><a href="form.html" class="link">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 visible-lg-block">
-                    <a href="" class="btn btn--calendar">Забронировать</a>
+                    <a href="form.html" class="btn btn--calendar">Забронировать</a>
                 </div>
                 <div class="burger col-sm-1 hidden-lg">
                     <span class="burger__line"></span>
@@ -89,7 +90,7 @@
         </div>
 </section>
 <div class="price">
-		<a href="" class="single-room__btn">Заказать</a>
+		<a href="" class="btn btn--calendar">Заказать</a>
 		<span class="price__value">От<b> 3400 </b>рублей/сутки</span>
 	</div>
 <div class="container">
@@ -128,7 +129,7 @@
   <footer class="page-footer container">
       <div class="row">
         <div class="col-sm-4 hidden-xs">
-          <div class="page-footer__adress">г.Санкт-Петербург Приморское ш. 600</div>
+          <div class="page-footer__adress">г.Санкт-Петербург <p>Приморское ш. 600</p></div>
         </div>
         <div class="col-sm-4 col-xs-12 text-center">
           <div class="social">
@@ -137,10 +138,15 @@
                     <img src="img/logo.png" alt="">
                 </a>
               </div>
+              <div class="social__icons">
+                  <a href = "#"class="social__vk"></a>
+                  <a href = "#"class="social__inst"></a>
+                  <a href = "#"class="social__fb"></a>
+              </div>
           </div> 
         </div>
         <div class="col-sm-4 hidden-xs">
-          <div class="page-footer__contacts">8-8000-555-35-35 info@greenvalley.ru</div>
+          <div class="page-footer__contacts"><div><p>8-8000-555-35-35</p><p> info@greenvalley.ru</p></div></div>
         </div>
       </div>
     </footer>

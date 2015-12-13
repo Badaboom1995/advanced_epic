@@ -4,15 +4,14 @@
 		height: 50px;
 		display: inline-block;
 	}
-	&__contacts{
+	&__contacts, &__adress{
 		display: flex;
 		height: 50px;
-		align-items: center;
+		flex-direction: column;
+		justify-content: flex-end;
 	}
-	&__adress{
-		display: flex;
-		height: 50px;
-		align-items: center;
+	&__contacts{
+		align-items: flex-end;
 	}
 
 
@@ -21,4 +20,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	&__icons{
+		display: flex;
+		justify-content: space-between;
+		width: 145px;
+	}
+	&__vk,&__inst,&__fb{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		background-repeat: no-repeat;
+
+	}
+	&__vk{
+		background-image: url(../img/icons/vk-ftr.png);
+		background-position: -5px 10px;
+	}
+	&__inst{
+		background-image: url(../img/icons/inst-ftr.png);
+		background-position: -2px 5px;
+	}
+	&__fb{
+		background-image: url(../img/icons/fb-ftr.png);
+		background-position: 0px 8px;
+	}
 }

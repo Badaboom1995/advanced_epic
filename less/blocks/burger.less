@@ -3,6 +3,8 @@
 	flex-direction: column;
 	padding: 15px;
 	cursor: pointer;
+	width: 75px;
+	box-sizing: border-box;
 	
 	&__line{
 		display: inline-block;
@@ -15,18 +17,4 @@
 	}
 
 }
-.burger.active{
-	.burger__line:nth-child(3){
-		position: absolute;
-		transform:rotate(-135deg);
-	}
-	.burger__line:nth-child(2){
-		position: absolute;
-		transform:rotate(-45deg);
-	}
-	.burger__line:nth-child(1){
-		position: absolute;
-		transform:rotate(45deg);
-	}
 
-}

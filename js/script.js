@@ -2,6 +2,11 @@
 
 	$(document).ready(function() {
  
+  $(".burger").on("click", function(){
+      $(".main-nav--responsive").toggleClass("active");
+      
+    })
+
   $("#owl-example").owlCarousel({
   	items : 1,
   	navigation : false,
@@ -98,10 +103,7 @@
  
     }
 
-    $(".burger").on("click", function(){
-      $(".main-nav").toggleClass("active");
-      $(".burger").toggleClass("active");
-    })
+
    
      
      
