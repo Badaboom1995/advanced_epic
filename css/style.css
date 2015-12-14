@@ -1930,6 +1930,8 @@ img {
   padding: 30px 0px;
   display: flex;
   align-items: center;
+  position: relative;
+  width: 90%;
 }
 .main-logo {
   width: 140px;
@@ -2677,6 +2679,7 @@ img {
   box-sizing: border-box;
   position: absolute;
   margin-top: 10px;
+  right: 0;
 }
 .burger__line {
   display: inline-block;

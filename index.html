@@ -68,9 +68,11 @@
          <div class="promo-slider__slide">
             <div class="container" >
               <div class="promo-slider__item-text">
-                    <h1 class='promo-slider__slide-title'>Семейный отдых на  берегу Финского залива</h1>
-                    <p>Green Valley - это современная база отдыха<br>
-                    в курортном районе для здорового отдыха всей семёй.</p>
+                    <div class="promo-slider__title-wrapper"><h1 class='promo-slider__slide-title'> Семейный отдых на  берегу Финского залива </h1></div>
+                    <div class="promo-slider__paragraph-wrapper">
+                        <p> Green Valley - это современная база отдыха<br>
+                    в курортном районе для здорового отдыха всей семёй. </p>
+                    </div>
               </div>
             </div>
           </div>
@@ -186,7 +188,7 @@
     </section>
     <section class="location container">
         <h1 class="location__title">Как до нас добраться</h1>
-        <div id="map"></div>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7934.705974061056!2d29.739008203184365!3d60.186086781768445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696549b22520ceb%3A0xbe3f76cbc27d2b88!2z0J_RgNC10LfQuNC00LXQvdGCLdCe0YLQtdC70YwsINC30LDQs9C-0YDQvtC00L3Ri9C5IHNwYS3QvtGC0LXQu9GM!5e0!3m2!1sru!2sru!4v1450127790286" width="100%" height="100%" frameborder="0" style="border:0" scrolling="no" allowfullscreen></iframe></div>
         <div class="location__transport">
             <section class="location__transport-item">
                 <h1 class="location__transport-title">Автобусы</h1>
@@ -254,29 +256,10 @@
         </div>
       </div>
     </footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-fq6rO_DPNWTiBejYRhXiPcV_mDazlpM&callback=initMap"
-        async defer></script>
     <script src='js/jquery-2.1.4.min.js'></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src='js/owl.carousel.js'></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
-     <script>var map;
-        function initMap() {
-
-        var myLatLng = {lat:60.167701, lng: 29.8209213};
-
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 17,
-              zoomControl: false,
-              scaleControl: false,
-              scrollwheel: false,
-          });
-          var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-          });
-    }
+     <script>
     </script>
     <script src='js/script.js'></script>
 
