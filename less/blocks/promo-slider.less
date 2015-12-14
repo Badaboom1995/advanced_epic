@@ -34,10 +34,13 @@
 	&__item-text{
 		p{
 			font-size: 18px;
+			display: inline;
+			background-color: #fff;
 			@media(max-width:768px){
 			font-size: 16px;
 			margin-bottom: 100px;
 			text-align: center;
+			
 			}
 		}
 	}
@@ -48,7 +51,7 @@
 			}
 	}
 	&__slide{
-		background-image: url(../img/index-top-slider.jpg);
+		background-image: url(../img/promo-banner.jpg);
 		background-repeat: no-repeat;
 		background-size: 100%;
 		height: 430px;
@@ -65,10 +68,14 @@
 			padding-top: 10px;
 		}
 	}
+	&__title-wrapper{
+		margin-bottom: 35px;
+	}
 	&__slide-title{
 		.common-title();
 		font-size: 36px;
-		margin-bottom: 35px;
+		display:inline;
+		background-color: #fff;
 
 		@media(max-width:768px){
 			font-size: 18px;

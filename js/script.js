@@ -54,7 +54,8 @@
     if($(window).width()>1199){
            $("#reviews").owlCarousel({
         items : 2,
-        navigation : false,
+        navigation : true,
+        navigationText : ["",""],
         pagination : false,
         
       });
@@ -104,8 +105,4 @@
  
     }
 
-
-   
-     
-     
 });

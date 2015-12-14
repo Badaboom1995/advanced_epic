@@ -2085,6 +2085,8 @@ img {
 }
 .promo-slider__item-text p {
   font-size: 18px;
+  display: inline;
+  background-color: #fff;
 }
 @media (max-width: 768px) {
   .promo-slider__item-text p {
@@ -2102,7 +2104,7 @@ img {
   }
 }
 .promo-slider__slide {
-  background-image: url(../img/index-top-slider.jpg);
+  background-image: url(../img/promo-banner.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 430px;
@@ -2122,12 +2124,16 @@ img {
     padding-top: 10px;
   }
 }
+.promo-slider__title-wrapper {
+  margin-bottom: 35px;
+}
 .promo-slider__slide-title {
   font-size: 30px;
   margin-bottom: 30px;
   font-family: "PT Serif";
   font-size: 36px;
-  margin-bottom: 35px;
+  display: inline;
+  background-color: #fff;
 }
 @media (max-width: 768px) {
   .promo-slider__slide-title {
@@ -2256,6 +2262,14 @@ img {
   padding-bottom: 50px;
   position: relative;
   margin-bottom: 50px;
+}
+.reviews .owl-next {
+  right: -20px;
+  bottom: 45%;
+}
+.reviews .owl-prev {
+  left: -20px;
+  bottom: 45%;
 }
 .reviews__quote {
   margin-bottom: 25px;
