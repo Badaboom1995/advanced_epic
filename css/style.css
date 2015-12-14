@@ -2562,7 +2562,6 @@ img {
   display: flex;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #ebebeb;
 }
 @media (max-width: 768px) {
   .apartament-types--single-room-page {
@@ -2572,6 +2571,7 @@ img {
 }
 .apartament-types--single-room-page .apartament-types__item {
   background-color: #fff;
+  border: 1px solid #ebebeb;
 }
 @media (max-width: 1200px) {
   .apartament-types--single-room-page .apartament-types__item {
