@@ -1915,9 +1915,11 @@ img {
 .page-header {
   transition: 1s ease all;
   margin: 0px;
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
 }
 .page-header__contacts {
-  font-size: 12px;
+  font-size: 14px;
 }
 .page-header b {
   font-size: 18px;
@@ -1925,18 +1927,20 @@ img {
   display: inline-block;
 }
 .page-header__inner {
-  display: flex;
   padding: 30px 0px;
+  display: flex;
   align-items: center;
-  width: 75%;
 }
 .main-logo {
   width: 140px;
   height: 70px;
+  display: inline-block;
+  text-align: center;
 }
 .main-logo img {
   width: auto;
   height: auto;
+  margin-left: 5px;
 }
 .main-nav {
   transition: 1s ease all;
@@ -2294,6 +2298,14 @@ img {
   width: 80px;
   height: 80px;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.reviews__img-wrapper img {
+  position: absolute;
+  left: -10px;
+  width: auto;
+  height: auto;
 }
 .reviews__footer {
   position: absolute;
@@ -2447,6 +2459,7 @@ img {
 .location__transport-item {
   width: 45%;
   box-sizing: border-box;
+  line-height: 22px;
 }
 @media (max-width: 1200px) {
   .location__transport-item {
@@ -2486,7 +2499,6 @@ img {
 }
 .location__transport-list-item {
   font-size: 14px;
-  margin-bottom: 10px;
 }
 .location__transport-list-item b {
   float: left;
@@ -2550,6 +2562,7 @@ img {
   display: flex;
   text-align: center;
   background-color: transparent;
+  border: 1px solid #ebebeb;
 }
 @media (max-width: 768px) {
   .apartament-types--single-room-page {
@@ -2569,6 +2582,9 @@ img {
   display: block;
   text-align: center;
 }
+.price--price-alone {
+  margin-top: 50px;
+}
 .price__title {
   font-size: 24px;
   display: block;
@@ -2586,10 +2602,14 @@ img {
 }
 .page-footer {
   padding: 50px 0px;
+  border-top: 1px solid #ebebeb;
 }
 .page-footer__logo-img {
   height: 50px;
   display: inline-block;
+}
+.page-footer__logo-img .main-logo img {
+  margin-left: -13px;
 }
 .page-footer__contacts,
 .page-footer__adress {
@@ -2597,6 +2617,8 @@ img {
   height: 50px;
   flex-direction: column;
   justify-content: flex-end;
+  font-size: 16px;
+  line-height: 22px;
 }
 .page-footer__contacts {
   align-items: flex-end;
@@ -2639,6 +2661,8 @@ img {
   cursor: pointer;
   width: 75px;
   box-sizing: border-box;
+  position: absolute;
+  margin-top: 10px;
 }
 .burger__line {
   display: inline-block;

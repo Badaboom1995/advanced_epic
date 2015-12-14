@@ -1,14 +1,20 @@
 .page-footer{
 	padding: 50px 0px;
+	border-top: 1px solid @gray-light;
 	&__logo-img{
 		height: 50px;
 		display: inline-block;
+		.main-logo img{
+			margin-left: -13px;
+		}
 	}
 	&__contacts, &__adress{
 		display: flex;
 		height: 50px;
 		flex-direction: column;
 		justify-content: flex-end;
+		font-size: 16px;
+		line-height: 22px;
 	}
 	&__contacts{
 		align-items: flex-end;
