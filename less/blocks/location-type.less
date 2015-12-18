@@ -4,8 +4,8 @@
 	padding: 50px 0px;
 
 	&__title{
-		font-size: @common-title;
-		margin-bottom: 30px;
+		.small-title();
+		font-family: "PT Serif";
 	}
 
 	&__wrapper{
@@ -22,9 +22,14 @@
 	&__location-item{
 		width: 100%;
 		display: inline-block;
+		
 		@media(min-width:768px){
 			width: 24.4%;
 			box-sizing: border-box;
+			border-right: 1px solid @gray-light;
+		}
+		&:last-child{
+			border-right: none;
 		}
 
 	}
@@ -32,8 +37,9 @@
 		font-size: 14px;
 		color: @gray;
 		display: inline-block;
-		padding: 18px 0px;
+		padding: 30px 0px;
 		position: relative;
+		text-transform: uppercase;
 
 	}
 
@@ -56,6 +62,10 @@
 		border-left: 3px solid @green;
 		border-radius: 1px;
 		transform:rotate(-45deg) translateY(-100%);
+		@media(min-width:768px){
+			top:60px;
+			left: 50%;
+		}
 
 	}
 

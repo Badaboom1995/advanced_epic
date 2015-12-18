@@ -1,13 +1,30 @@
 .personal-info{
 	padding: 30px 20px;
 	text-align: center;
+	.filled{
+		position: relative;
+	}
+	.filled:before{
+		content: '';
+		position: absolute;
+		left: 40px;
+		top: 27px;
+		display: inline-block;
+		width: 11px;
+		height: 7px;
+		border-bottom: 3px solid @green;
+		border-left: 3px solid @green;
+		border-radius: 1px;
+		transform:rotate(-45deg) translateY(-100%);
 
+	}
 	@media(min-width:1200px){
 		width: 820px;
 		margin: 0 auto;
 	}
 	&__section-title{
-		.common-title();
+		.small-title();
+		font-family: "PT Serif";
 	}
 	input{
 		display: inline-block;

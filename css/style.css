@@ -2700,6 +2700,8 @@ img {
   text-align: center;
   background-color: #fafafa;
   margin-bottom: 40px;
+  border: 1px solid #ebebeb;
+  padding: 0;
 }
 @media (max-width: 1200px) {
   .apartament {
@@ -2743,6 +2745,7 @@ img {
 }
 .apartament__img {
   height: 300px;
+  margin-right: -15px;
 }
 @media (max-width: 1200px) {
   .apartament__img {
@@ -2934,10 +2937,11 @@ img {
   top: 10px;
 }
 .booking-promo {
-  width: 280px;
+  width: 380px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 45px;
+  padding-top: 80px;
 }
 .booking-promo__title {
   font-size: 30px;
@@ -2955,6 +2959,7 @@ img {
 .date-input__title {
   font-size: 26px;
   margin-bottom: 30px;
+  font-family: "PT Serif";
 }
 @media (min-width: 768px) {
   .date-input__dates {
@@ -2997,7 +3002,7 @@ img {
   border: 1px solid #ebebeb;
   border-left: none;
   width: 50px;
-  padding: 15px;
+  padding: 7px 0px;
   box-sizing: border-box;
   text-align: center;
   color: #0ab89d;
@@ -3023,7 +3028,7 @@ img {
   content: "";
   display: inline-block;
   width: 1px;
-  height: 90px;
+  height: 70%;
   background-color: #ebebeb;
   position: absolute;
   left: 0;
@@ -3051,18 +3056,20 @@ img {
   }
 }
 .apart-input__title {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 30px;
   font-family: "PT Serif";
 }
 .apart-input label {
   cursor: pointer;
   width: 190px;
-  height: 108px;
+  height: 160px;
   display: inline-block;
   font-size: 14px;
   transition: 0.5s ease all;
-  background-position: 55px 40px;
+  padding-top: 25px;
+  border: 1px solid #ebebeb;
+  background-position: 55px 55px;
 }
 @media (max-width: 768px) {
   .apart-input label {
@@ -3075,6 +3082,17 @@ img {
   background-image: url(../img/icons/cottage.png);
   background-repeat: no-repeat;
   opacity: 0.5;
+  border-right: none;
+  position: relative;
+}
+.apart-input label[for=apart-cottage]:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background-color: #ebebeb;
+  position: absolute;
+  right: 0;
 }
 .apart-input input#apart-hotel:checked + label,
 .apart-input input#apart-cottage:checked + label {
@@ -3084,6 +3102,7 @@ img {
   background-image: url(../img/icons/hotel.png);
   background-repeat: no-repeat;
   opacity: 0.5;
+  border-left: none;
 }
 .apart-input input[type=radio] {
   display: none;
@@ -3094,8 +3113,9 @@ img {
   padding: 50px 0px;
 }
 .location-type__title {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 30px;
+  font-family: "PT Serif";
 }
 .location-type__wrapper {
   background-color: #fafafa;
@@ -3118,14 +3138,19 @@ img {
   .location-type__location-item {
     width: 24.4%;
     box-sizing: border-box;
+    border-right: 1px solid #ebebeb;
   }
+}
+.location-type__location-item:last-child {
+  border-right: none;
 }
 .location-type__field-name {
   font-size: 14px;
   color: #979696;
   display: inline-block;
-  padding: 18px 0px;
+  padding: 30px 0px;
   position: relative;
+  text-transform: uppercase;
 }
 .location-type input {
   display: none;
@@ -3145,6 +3170,12 @@ img {
   border-left: 3px solid #0ab89d;
   border-radius: 1px;
   transform: rotate(-45deg) translateY(-100%);
+}
+@media (min-width: 768px) {
+  .location-type input:checked + label:before {
+    top: 60px;
+    left: 50%;
+  }
 }
 .location-type__location-info {
   background-color: #fafafa;
@@ -3198,6 +3229,22 @@ img {
   padding: 30px 20px;
   text-align: center;
 }
+.personal-info .filled {
+  position: relative;
+}
+.personal-info .filled:before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: 27px;
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  border-bottom: 3px solid #0ab89d;
+  border-left: 3px solid #0ab89d;
+  border-radius: 1px;
+  transform: rotate(-45deg) translateY(-100%);
+}
 @media (min-width: 1200px) {
   .personal-info {
     width: 820px;
@@ -3205,7 +3252,7 @@ img {
   }
 }
 .personal-info__section-title {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 30px;
   font-family: "PT Serif";
 }
@@ -3279,11 +3326,11 @@ img {
   margin-bottom: 25px;
 }
 .payment-method__title {
-  font-size: 30px;
-  margin-bottom: 30px;
-  font-family: "PT Serif";
   text-align: center;
   width: 100%;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-family: "PT Serif";
 }
 @media (min-width: 768px) {
   .payment-method__options {

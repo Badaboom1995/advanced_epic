@@ -6,6 +6,15 @@
       $(".main-nav--responsive").toggleClass("active");
       
     })
+ 
+   $(".personal-info input").change(function(){
+    if ($(this).prop("value")){
+      $(this).parent().addClass("filled");
+    }
+    else{
+      $(this).parent().removeClass("filled");
+    }
+   })
 
   $("#owl-example").owlCarousel({
   	items : 1,
