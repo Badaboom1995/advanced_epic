@@ -1926,6 +1926,9 @@ img {
   margin-bottom: 10px;
   display: inline-block;
 }
+.page-header .main-logo {
+  margin-bottom: -10px;
+}
 .page-header__inner {
   padding: 30px 0px;
   display: flex;
@@ -2065,15 +2068,26 @@ img {
   width: 400px;
   text-align: center;
   margin: 30px auto;
+  text-transform: uppercase;
 }
 .promo-slider__slider-buttons a {
   color: #979696;
   padding: 20px;
   display: inline-block;
 }
+@media (max-width: 768px) {
+  .promo-slider__slider-buttons a {
+    padding: 20px 6px;
+  }
+}
 .promo-slider__slider-buttons a:hover,
 .promo-slider__slider-buttons a:focus {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .promo-slider__slider-buttons {
+    width: 280px;
+  }
 }
 .promo-slider__slider-buttons a.tab-active {
   color: #ff7435;
@@ -2090,6 +2104,18 @@ img {
   bottom: 5px;
   transform: translateX(-50%);
 }
+.promo-slider__item-text {
+  width: 580px;
+}
+@media (max-width: 768px) {
+  .promo-slider__item-text {
+    width: 105%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0px -15px;
+    padding: 15px 0px;
+  }
+}
 .promo-slider__item-text p {
   font-size: 18px;
   display: inline;
@@ -2102,14 +2128,6 @@ img {
     text-align: center;
   }
 }
-.promo-slider__item-text {
-  width: 580px;
-}
-@media (max-width: 768px) {
-  .promo-slider__item-text {
-    width: 100%;
-  }
-}
 .promo-slider__slide {
   background-image: url(../img/promo-banner.jpg);
   background-repeat: no-repeat;
@@ -2120,15 +2138,15 @@ img {
 }
 @media (max-width: 768px) {
   .promo-slider__slide {
-    background-size: 100% 165px;
-    background-position: 0 bottom;
+    background-size: auto;
+    background-position: 0px bottom;
     font-size: 16px;
   }
 }
 @media (max-width: 1200px) {
   .promo-slider__slide {
     height: auto;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 .promo-slider__title-wrapper {
@@ -2146,7 +2164,8 @@ img {
   .promo-slider__slide-title {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 15px;
+    display: inline-block;
+    margin: 0;
   }
 }
 .services {
@@ -2590,6 +2609,9 @@ img {
     align-items: center;
   }
 }
+.apartament-types--single-room-page .apartament-types__item:hover img {
+  opacity: 0.8;
+}
 .apartament-types--single-room-page .apartament-types__item {
   background-color: #fff;
   border: 1px solid #ebebeb;
@@ -2760,6 +2782,7 @@ img {
 }
 .room-list__promo {
   background-image: url(../img/room-list__promo.jpg);
+  background-size: cover;
 }
 .room-list__promo-wrapper {
   padding: 50px 0px;
